@@ -1,0 +1,10 @@
+bin/
+node_modules/
+bower_components/
+thirdparty_components/
+celibs_components/
+resources/js/
+npm-debug.log
+.idea/workspace.xml
+.idea/watcherTasks.xml
+.idea/misc.xml

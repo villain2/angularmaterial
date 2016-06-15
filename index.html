@@ -2,22 +2,35 @@
 <html>
     <head>
         <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"></link>
+
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+        <script src="node_modules/angular-aria/angular-aria.js"></script>
+        <script src="node_modules/angular-material/angular-material.js"></script>
+        <script src="node_modules/angular-messages/angular-messages.js"></script>
     </head>
 
-    <body ng-app="myApp">
+    <body ng-app="myApp" layout="column" ng-controller="AppCtrl" ng-cloak="">
+        <md-content>
+            <md-toolbar layout="row">
+                <h1>Test This Out</h1>
+            </md-toolbar>
 
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>
-    <script src="node_modules/angular-animate/angular-animate.js"></script>
-    <script src="node_modules/angular-aria/angular-aria.js"></script>
-    <script src="node_modules/angular-material/angular-material.js"></script>
+            <div flex layout="row">
+                <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
+
+                <md-content flex id="content"></md-content>
+            </div>
+        </md-content>
 
     <script>
-        angular.module("myApp", ['ngMaterial'])
+        /*angular.module("myApp", ['ngMaterial', 'ngRoute'])
                 .run(function ()
                 {
                     console.log('running app');
-                });
+                });*/
     </script>
+    <script src="src/app.js"></script>
     </body>
 </html>
