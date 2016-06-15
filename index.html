@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"></link>
+    </head>
+
+    <body ng-app="myApp">
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+
+    <script>
+        angular.module("myApp", ['ngMaterial'])
+                .run(function ()
+                {
+                    console.log('running app');
+                });
+    </script>
+    </body>
+</html>
